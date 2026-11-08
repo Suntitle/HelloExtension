@@ -1,0 +1,6 @@
+[project]
+name = "suntitle-hello-extension"
+version = "0.1.0"
+description = "Send Hello to the Suntitle text relay every ten seconds."
+requires-python = ">=3.9"
+dependencies = ["websockets>=12,<16"]

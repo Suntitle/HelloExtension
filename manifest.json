@@ -1,0 +1,23 @@
+{
+  "displayName": "Hello",
+  "adapter": {
+    "inputType": "text",
+    "outputType": "text",
+    "execution": {
+      "runtime": "python",
+      "command": "./hello.py"
+    },
+    "settings": {
+      "endpoint": { "default": "translate" }
+    },
+    "arguments": [
+      {
+        "flag": "--server",
+        "url": {
+          "base": "runtime.websocketUrl",
+          "path": "settings.endpoint"
+        }
+      }
+    ]
+  }
+}
